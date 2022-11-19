@@ -37,7 +37,7 @@
             <php?
                 pre_r($_POST);
             ?>
-            <form action="action" method="POST">
+            <form action="" method="POST">
                 <div>
                 <label for="">Username</label>
                 <input type="text" name="username" required>
