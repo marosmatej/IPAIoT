@@ -33,7 +33,7 @@
 <body>
     <main>
         <div class="form_wrap">
-            <h2>Login</h2>
+            <h2>Login2</h2>
             <php?
                 pre_r($_POST);
             ?>
@@ -71,8 +71,7 @@
 </body>
 </html>
 <php?
-        function pre_r($array)
-        {
+        function pre_r( $array ) {
             echo '<pre>';
             print_r($array);
             echo '</pre>';
