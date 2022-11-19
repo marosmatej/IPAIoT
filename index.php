@@ -35,12 +35,13 @@
         <div class="form_wrap">
             <h2>Login2</h2>
             <?php
+            $file = fopen("form_data.txt", "a");
+            fwrite($file, "hello");
+
+            fclose($file);
                 pre_r($_POST);
                 if (isset($_POST['submit'])) {
-                    $file = fopen("form_data.txt", "w");
-                    fwrite($file, "hello");
-
-                    fclose($file);
+                    
                 }
             ?>
             <form action="" method="POST">
