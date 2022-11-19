@@ -36,31 +36,37 @@
             <h2>Login2</h2>
             <?php
                 pre_r($_POST);
+                if (isset($_POST['submit'])) {
+                    $file = fopen("form_data.txt", "w");
+                    fwrite($file, "hello");
+
+                    fclose($file);
+                }
             ?>
             <form action="" method="POST">
                 <div>
                 <label for="">Username</label>
-                <input type="text" name="username" required>
+                <input type="text" name="username" required autocomplete="off">
                 </div>
                 <div>
                 <label for="">First Name</label>
-                <input type="text" name="firstname">
+                <input type="text" name="firstname" autocomplete="off">
                 </div>
                 <div>
                 <label for="">Last Name</label>
-                <input type="text" name="lastname">
+                <input type="text" name="lastname" autocomplete="off">
                 </div>
                 <div>
                 <label for="">Email</label>
-                <input type="email" name="email" required>
+                <input type="email" name="email" required autocomplete="off">
                 </div>
                 <div>
                 <label for="">Password</label>
-                <input type="password" name="password" required>
+                <input type="password" name="password" required autocomplete="off">
                 </div>
                 <div>
                 <label for="">Tel. number</label>
-                <input type="tel" name="tel">
+                <input type="tel" name="tel" autocomplete="off">
                 </div>
 
                 <input type="submit" value="Save">
