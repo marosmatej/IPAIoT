@@ -35,13 +35,16 @@
         <div class="form_wrap">
             <h2>Login2</h2>
             <?php
-            $file = fopen("form_data.txt", "a");
-            fwrite($file, "hello");
-
-            fclose($file);
-                pre_r($_POST);
                 if (isset($_POST['submit'])) {
-                    
+                    $file = fopen("form_data.txt", "a");
+                    fwrite($file, $_POST['username'] . "\n");
+                    fwrite($file, $_POST['firstname'] . "\n");
+                    fwrite($file, $_POST['lastname'] . "\n");
+                    fwrite($file, $_POST['email'] . "\n");
+                    fwrite($file, $_POST['password'] . "\n");
+                    fwrite($file, $_POST['tel'] . "\n");
+
+                    fclose($file);
                 }
             ?>
             <form action="" method="POST">
@@ -77,10 +80,3 @@
     </main>
 </body>
 </html>
-<?php
-        function pre_r( $array ) {
-            echo '<pre>';
-            print_r($array);
-            echo '</pre>';
-        }
-?>
