@@ -34,7 +34,10 @@
     <main>
         <div class="form_wrap">
             <h2>Login</h2>
-            <form action="">
+            <php?
+                pre_r($_POST);
+            ?>
+            <form action="action" method="POST">
                 <div>
                 <label for="">Username</label>
                 <input type="text" name="username" required>
@@ -67,3 +70,11 @@
     </main>
 </body>
 </html>
+<php?
+        function pre_r($array)
+        {
+            echo '<pre>';
+            print_r($array);
+            echo '</pre>';
+        }
+?>
