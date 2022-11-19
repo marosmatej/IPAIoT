@@ -34,7 +34,7 @@
     <main>
         <div class="form_wrap">
             <h2>Login2</h2>
-            <php?
+            <?php
                 pre_r($_POST);
             ?>
             <form action="" method="POST">
