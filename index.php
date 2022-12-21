@@ -11,7 +11,7 @@
         
         echo $sn1;
         echo $sn2;
-        echo $text;
+        //echo $text;
         echo "<br>";
         echo "Sum:" . $sum;
     ?>
