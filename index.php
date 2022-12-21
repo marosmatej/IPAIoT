@@ -9,6 +9,8 @@
         $text = "a=" . $sn1 . " b=" . $sn2;
         $sum = $sn1 + $sn2;
         
+        echo $sn1;
+        echo $sn2;
         echo $text;
         echo "<br>";
         echo "Sum:" . $sum;
