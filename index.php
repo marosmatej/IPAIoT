@@ -1,6 +1,6 @@
-<?php echo '<p>First web on Azure</p>'; ?>
+<?php echo '<p>First web on Azure</p>';
 
-<?php
+
         echo '<h1>getParameters page</h1>';
         
         $sn1 = $_GET["a"];
